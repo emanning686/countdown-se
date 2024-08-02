@@ -9,7 +9,7 @@ function App() {
   const [bgId, setBgId] = useState(0);
 
   useEffect(() => {
-    setBgId(Math.floor(Math.random() * 8));
+    setBgId(Math.floor(Math.random() * 9));
   }, []);
 
   let finalDate = new Date("Dec 12, 2024 00:00:00");
