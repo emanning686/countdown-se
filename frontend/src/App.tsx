@@ -34,7 +34,7 @@ function App() {
     <div>
       <img
         src={`/pattern${bgId}.png`}
-        className="absolute left-0 top-0 -z-10 h-screen w-full scale-150 object-cover"
+        className="absolute left-0 top-0 -z-10 h-4/5 w-4/5 scale-150 object-cover"
       />
       <div className="h-screen bg-[#2b2d46] bg-opacity-75">
         <div className="h-screen bg-gradient-to-t from-[#2b2d46] from-25% to-transparent">
