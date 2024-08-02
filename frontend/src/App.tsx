@@ -6,10 +6,10 @@ function App() {
   const [weeks, setWeeks] = useState(0);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
-  const [bgID, setbgID] = useState(0);
+  const [bgId, setBgId] = useState(0);
 
   useEffect(() => {
-    setbgID(() => Math.floor(Math.random() * 8));
+    setBgId(Math.floor(Math.random() * 8));
   }, []);
 
   let finalDate = new Date("Dec 12, 2024 00:00:00");
@@ -31,7 +31,11 @@ function App() {
   }, 1000);
 
   return (
-    <div className={`h-screen bg-[url('/pattern${1}.png')]`}>
+    <div>
+      <img
+        src={`/pattern${bgId}.png`}
+        className="absolute left-0 top-0 -z-10 h-screen w-full scale-150 object-cover"
+      />
       <div className="h-screen bg-[#2b2d46] bg-opacity-75">
         <div className="h-screen bg-gradient-to-t from-[#2b2d46] from-25% to-transparent">
           <div className="flex flex-col items-center justify-center bg-cover bg-center p-16">
