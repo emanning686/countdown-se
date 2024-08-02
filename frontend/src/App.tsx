@@ -31,11 +31,11 @@ function App() {
   }, 1000);
 
   return (
-    <div className={`h-screen bg-[url('/pattern${bgID}.png')]`}>
+    <div className={`h-screen bg-[url('/pattern${1}.png')]`}>
       <div className="h-screen bg-[#2b2d46] bg-opacity-75">
         <div className="h-screen bg-gradient-to-t from-[#2b2d46] from-25% to-transparent">
           <div className="flex flex-col items-center justify-center bg-cover bg-center p-16">
-            <h1 className="animate-gradient2 gradient-text-1 font-inter text-5xl font-extrabold md:text-8xl">
+            <h1 className="gradient-text-1 animate-gradient2 font-inter text-5xl font-extrabold md:text-8xl">
               Countdown
             </h1>
             <div className="mt-10 grid grid-cols-2 gap-4">
