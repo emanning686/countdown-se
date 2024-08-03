@@ -9,11 +9,13 @@ function App() {
   const [bgId, setBgId] = useState(0);
 
   useEffect(() => {
+    updateCountdown();
     setBgId(Math.floor(Math.random() * 9));
   }, []);
 
-  let finalDate = new Date("Dec 12, 2024 00:00:00");
-  setInterval(() => {
+  const finalDate = new Date("Dec 12, 2024 00:00:00");
+
+  function updateCountdown() {
     let currentDate = new Date();
     let diff = finalDate.getTime() - currentDate.getTime();
 
@@ -28,6 +30,10 @@ function App() {
 
     let hoursDiff = Math.floor(diff / (1000 * 60 * 60));
     setHours(hoursDiff);
+  }
+
+  setInterval(() => {
+    updateCountdown();
   }, 1000);
 
   return (
