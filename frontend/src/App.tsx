@@ -13,7 +13,7 @@ function App() {
     setBgId(Math.floor(Math.random() * 9));
   }, []);
 
-  const finalDate = new Date("Dec 12, 2024 00:00:00");
+  const finalDate = new Date("Nov 28, 2024 00:00:00");
 
   function updateCountdown() {
     let currentDate = new Date();
